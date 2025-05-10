@@ -17,6 +17,7 @@ jobs:
 
          - name: Install dependencies
            run: uv sync --group integration
+           working-directory: polish-sentiment-app/polish-sentiment-app
 
          - name: Run ruff check
            run: uv run ruff check
