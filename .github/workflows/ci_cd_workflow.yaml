@@ -26,6 +26,7 @@ jobs:
 
          - name: Run pip-audit
            run: uv run pip-audit --vulnerability-service pypi
+           working-directory: polish-sentiment-app/polish-sentiment-app
 
          - name: Run PyTest
            run: uv run pytest tests
