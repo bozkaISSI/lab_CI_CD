@@ -44,8 +44,8 @@ jobs:
         working-directory: polish-sentiment-app/polish-sentiment-app
 
       - name: Download model artifacts
-        run: uv run python polish-sentiment-app/main.py --script download
-        working-directory: polish-sentiment-app/polish-sentiment-app
+        run: uv run python polish-sentiment-app/polish-sentiment-app/main.py --script download
+        working-directory: polish-sentiment-app/polish-sentiment-app/src/scripts
 
       - name: Export model to ONNX
         run: uv run python polish-sentiment-app/main.py --script export
