@@ -299,7 +299,7 @@ jobs:
 
 ### Building a CI pipeline - running checks and tests
 
-In this exercise, we will enhance [this](https://drive.google.com/file/d/1KTDi11sKYW0dRjqdUlAee1vsRHLGfEO6/view?usp=drive_link) project,
+In this exercise, we will enhance [this](https://drive.google.com/file/d/1KsPtCzd0MELmgjELqhF-kvYb5-6We4ey/view) project,
 which hosts an application for performing sentiment analysis using 
 the `bardsai/twitter-sentiment-pl-base` [model](https://huggingface.co/bardsai/twitter-sentiment-pl-base).
 Our focus will be on two key configuration files:
