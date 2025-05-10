@@ -47,10 +47,11 @@ jobs:
       - name: Install deployment dependencies
         run: uv sync --group deployment
 
-
       - name: Download model artifacts
         run: uv run python main.py --script download
 
       - name: Export model to ONNX
         run: uv run python main.py --script export
 
+      - name: Build Docker image
+        run: docker build -t polish-sentiment-app-onnx:latest .
