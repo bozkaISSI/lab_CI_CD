@@ -474,7 +474,7 @@ stage, the final image size is minimized, which start up containers much faster.
 
 ```Dockerfile
 # create the initial "builder" layer
-FROM python:3.13-slim-bookworm AS builder
+FROM python:3.12-slim-bookworm AS builder
 
 WORKDIR /app
 
@@ -488,7 +488,7 @@ RUN uv sync --group inference
 
 # prepare new environment without unnecessary software, e.g. make, uv
 # this is another stage, starting from fresh Docker base image
-FROM python:3.13-slim-bookworm AS runtime
+FROM python:3.12-slim-bookworm AS runtime
 
 WORKDIR /app
 ENV PATH="/app/.venv/bin:$PATH"
