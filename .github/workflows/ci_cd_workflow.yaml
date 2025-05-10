@@ -30,3 +30,4 @@ jobs:
 
          - name: Run PyTest
            run: uv run pytest tests
+           working-directory: polish-sentiment-app/polish-sentiment-app
